@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +17,51 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="bg-gray-900 text-gray-100 font-sans w-screen h-screen flex flex-col justify-between">
+        <header className="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-6 shadow-lg">
+          <nav className="container mx-auto flex justify-between items-center">
+            <h1 className="text-3xl font-bold tracking-wider">
+              <Link href="/">My Portfolio</Link>
+            </h1>
+            <ul className="flex space-x-6">
+              <li>
+                <Link
+                  className="hover:text-yellow-300 transition duration-300"
+                  href="/about"
+                >
+                  About
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-yellow-300 transition duration-300"
+                  href="/projects"
+                >
+                  Projects
+                </Link>
+              </li>
+              <li>
+                <Link
+                  className="hover:text-yellow-300 transition duration-300"
+                  href="/contact"
+                >
+                  Contact
+                </Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <main className="container mx-auto py-12 ">{children}</main>
+        <footer className="bg-gray-800 text-gray-400 p-6 text-center">
+          <p className="text-sm">
+            &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
+          </p>
+          <p className="text-sm mt-2">
+            Built with ❤️ using <span className="text-yellow-300">Next.js</span>{" "}
+            & <span className="text-yellow-300">Tailwind CSS</span> By Teanq.
+          </p>
+        </footer>
+      </body>
     </html>
   );
 }

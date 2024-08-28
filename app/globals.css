@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+/* styles/globals.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+body {
+  @apply bg-gray-900 text-gray-100 font-sans;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  @apply transition duration-300;
+}
+
+.container {
+  @apply max-w-4xl mx-auto px-4;
+}
+
+h1,
+h2 {
+  @apply text-gray-800;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
