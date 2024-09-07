@@ -23,8 +23,8 @@ export default function ProjectsPage() {
   ];
 
   return (
-    <div>
-      <h2 className="text-4xl font-bold mb-8 text-center text-yellow-300">
+    <div className="w-full mx-auto max-w-[1024px]">
+      <h2 className="text-4xl font-bold mb-8 text-center text-[#00ADB5]">
         My Projects
       </h2>
       <ul className="space-y-8">
@@ -34,7 +34,7 @@ export default function ProjectsPage() {
             className="bg-gray-800 p-6 rounded-lg shadow-md hover:bg-gray-700 transition duration-300"
           >
             <Link className="block" href={`/projects/${project.id}`}>
-              <h3 className="text-3xl font-semibold text-yellow-300">
+              <h3 className="text-3xl font-semibold text-[#00ADB5]">
                 {project.title}
               </h3>
               <p className="mt-2 text-gray-400">{project.description}</p>

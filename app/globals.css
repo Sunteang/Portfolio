@@ -6,7 +6,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
 body {
-  @apply bg-gray-900 text-gray-100 font-sans;
+  @apply bg-[#222831] text-gray-100 font-sans;
   font-family: "Poppins", sans-serif;
 }
 
@@ -16,13 +16,9 @@ a {
   @apply transition duration-300;
 }
 
-.container {
-  @apply max-w-4xl mx-auto px-4;
-}
-
 h1,
 h2 {
-  @apply text-gray-800;
+  @apply text-white;
 }
 
 :root {
@@ -37,16 +33,6 @@ h2 {
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
 }
 
 @layer utilities {

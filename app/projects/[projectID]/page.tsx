@@ -1,51 +1,31 @@
-//simple project with no image or video details
-// import { useRouter } from 'next/router';
-
-// const projectDetails = {
-//   'project-1': {
-//     title: 'Project 1',
-//     description: 'Detailed description of Project 1.',
-//     content: 'This is where you can add more in-depth content about Project 1.',
-//   },
-//   'project-2': {
-//     title: 'Project 2',
-//     description: 'Detailed description of Project 2.',
-//     content: 'This is where you can add more in-depth content about Project 2.',
-//   },
-//   'project-3': {
-//     title: 'Project 3',
-//     description: 'Detailed description of Project 3.',
-//     content: 'This is where you can add more in-depth content about Project 3.',
-//   },
-// };
-
-// export default function ProjectDetailPage() {
-//   const router = useRouter();
-//   const { id } = router.query;
-
-//   const project = projectDetails[id as string];
-
-//   if (!project) {
-//     return <p className="text-center text-red-500">Project not found</p>;
-//   }
-
-//   return (
-//     <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
-//       <h2 className="text-4xl font-bold mb-4 text-yellow-300">{project.title}</h2>
-//       <p className="text-gray-400 mb-6">{project.description}</p>
-//       <div className="text-gray-300">
-//         {project.content}
-//       </div>
-//     </div>
-//   );
-// }
-
 //projects with image and video details
-"use client"; // This directive marks the file as a Client Component
+"use client";
 
 import { useParams } from "next/navigation";
 
-const projectDetails = {
+const projectDetails: {
+  "project-1": {
+    title: string;
+    description: string;
+    content: string;
+    imageUrl: string;
+    projectLink: string;
+  };
+  "project-2": {
+    title: string;
+    description: string;
+    content: string;
+    imageUrl: string;
+    projectLink: string;
+  };
+  "project-3": {
+    title: string;
+    description: string;
+    content: string;
+    imageUrl: string;
+    projectLink: string;
+  };
+} = {
   "project-1": {
     title: "YourHobby",
     description:
@@ -53,6 +33,7 @@ const projectDetails = {
     content: "This is where you can add more in-depth content about Project 1.",
     imageUrl:
       "https://i.pinimg.com/originals/1f/0c/51/1f0c5136083b8c1f05a9fb1e58a196bd.jpg",
+    projectLink: "https://your-hobby.vercel.app/",
   },
   "project-2": {
     title: "YourStart",
@@ -61,6 +42,7 @@ const projectDetails = {
     content: "This is where you can add more in-depth content about Project 2.",
     imageUrl:
       "https://deerdesigner.com/wp-content/uploads/15384-Infinity-Healthcare-Services-Website-mockup-2.png",
+    projectLink: "https://your-start.vercel.app/",
   },
   "project-3": {
     title: "Lowkey Style",
@@ -69,29 +51,34 @@ const projectDetails = {
     content: "This is where you can add more in-depth content about Project 3.",
     imageUrl:
       "https://mir-s3-cdn-cf.behance.net/projects/404/71756e195907401.Y3JvcCwxOTIwLDE1MDEsMCwxOQ.jpg",
+    projectLink: "https://lowkey-fashion.vercel.app/",
   },
 };
 
+type ProjectID = keyof typeof projectDetails;
+
 export default function ProjectDetailPage() {
   const params = useParams();
-  const { projectID } = params;
+  const projectID = params.projectID as ProjectID;
 
-  const project = projectDetails[projectID as string];
+  const project = projectDetails[projectID];
 
   if (!project) {
     return <p className="text-center text-red-500">Project not found</p>;
   }
 
   return (
-    <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
+    <div className="bg-gray-800 p-8 rounded-lg shadow-lg mx-auto max-w-[1024px]">
       <h2 className="text-4xl font-bold mb-4 text-yellow-300">
         {project.title}
       </h2>
       <p className="text-gray-400 mb-6">
         {project.description}{" "}
-        <span>
+        <span className="text-blue-300 ">
           {" "}
-          <a href="https://lowkey-fashion.vercel.app/">Click Here</a>
+          <a href={project.projectLink} target="_blank">
+            View Here.
+          </a>
         </span>
       </p>
 

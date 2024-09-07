@@ -1,8 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import Button from "../components/atoms/Buttons/button1";
+import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function ContactPage() {
+export default function SendMessage() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
@@ -10,15 +14,13 @@ export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setSubmitted(true);
+    setName("");
     setEmail("");
     setMessage("");
   };
 
   return (
-    <div className="max-w-lg mx-auto bg-gray-800 p-8 rounded-lg shadow-lg">
-      <h2 className="text-4xl font-bold mb-6 text-center text-[#00ADB5]">
-        Contact Me
-      </h2>
+    <div className="max-w-9xl mx-auto p-8  ">
       {submitted ? (
         <p className="text-green-500 text-center">
           Your message has been sent!
@@ -27,10 +29,26 @@ export default function ContactPage() {
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
             <label
-              htmlFor="email"
-              className="block text-sm font-medium text-gray-400"
+              htmlFor="name"
+              className="block text-sm font-medium text-gray-400 mb-2"
             >
-              Email:
+              Your Name:
+            </label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-900 text-gray-300 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-300"
+              required
+            />
+          </div>
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-400 mb-2"
+            >
+              Your Email:
             </label>
             <input
               type="email"
@@ -44,9 +62,9 @@ export default function ContactPage() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-400"
+              className="block text-sm font-medium text-gray-400 mb-2"
             >
-              Message:
+              Your Message:
             </label>
             <textarea
               id="message"
@@ -56,12 +74,12 @@ export default function ContactPage() {
               required
             />
           </div>
-          <button
+          <Button
             type="submit"
-            className="w-full py-3  bg-[#00ADB5] text-wh font-semibold rounded-full shadow-lg hover:bg-yellow-400 transition duration-300"
+            className=" w-full py-3 bg-[#00ADB5] text-white font-semibold rounded-full shadow-lg hover:bg-[#09898E] transition duration-300"
           >
-            Send Message
-          </button>
+            Send Message <FontAwesomeIcon icon={faPaperPlane} />
+          </Button>
         </form>
       )}
     </div>
