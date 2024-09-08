@@ -10,7 +10,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Serey Sunteang",
   description:
     "I am a developer with experience in various technologies including React, Next.js, and Python.",
 };
@@ -26,7 +26,7 @@ export default function RootLayout({
         className={`text-gray-100 w-screen h-screen flex flex-col justify-between ${poppins.className}`}
       >
         <NavBar />
-        <main className=" md:container  mx-auto py-12 ">{children}</main>
+        <main className=" md:container  mx-auto py-12 mb-20">{children}</main>
         <Footer />
       </body>
     </html>

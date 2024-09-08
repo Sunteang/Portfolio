@@ -20,6 +20,12 @@ export default function ProjectsPage() {
       description:
         "A platform offering a diverse collection of stylish and affordable clothing for men and women. It features a range of apparel from casual wear to formal attire, catering to different styles and preferences for every occasion.",
     },
+    {
+      id: "project-4",
+      title: "E-Learning",
+      description:
+        "The E-Learning app offers a wide variety of educational videos, making learning accessible to everyone. Users can explore topics and enhance their skills by watching engaging content at their convenience.",
+    },
   ];
 
   return (

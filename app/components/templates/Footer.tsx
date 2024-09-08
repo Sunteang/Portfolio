@@ -11,7 +11,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Footer() {
   return (
     <footer className="bg-[#222831] text-gray-400 p-6 flex flex-col items-center gap-8 border-t-2 border-t-gray-700 mt-20">
-      <ul className="flex space-x-8  mt-16">
+      <ul className="flex space-x-8  mt-8">
         <li>
           <Link
             className="hover:text-[#00ADB5] transition duration-300 "
@@ -38,7 +38,7 @@ export default function Footer() {
           </Link>
         </li>
       </ul>
-      <ul className="flex space-x-8 text-3xl">
+      <ul className="flex space-x-8 text-2xl">
         <li>
           <Link
             className="hover:text-[#00ADB5] transition duration-300"
@@ -79,12 +79,8 @@ export default function Footer() {
       </ul>
 
       <div className="flex flex-col items-center border-t-2 border-t-gray-700">
-        <p className="text-sm my-2 ">
+        <p className="text-sm my-4 ">
           &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
-        </p>
-        <p className="text-sm ">
-          Built with ❤️ using <span className="text-[#00ADB5]">Next.js</span> &{" "}
-          <span className="text-[#00ADB5]">Tailwind CSS</span> By Teanq.
         </p>
       </div>
     </footer>

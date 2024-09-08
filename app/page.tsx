@@ -1,19 +1,25 @@
 import Link from "next/link";
+import HireMe from "./(handleRouter)/hireMe";
+import SendMessage from "./(handleRouter)/handleMessage";
+import Button from "./components/atoms/Buttons/button1";
+import ProjectsFilter from "./(handleRouter)/projectFilter";
+
+//contain all icons import
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+//contain all image import
 import Image from "next/image";
 import about_image from "../app/images/group1-image/about_image.png";
 import hero_image from "../app/images/group1-image/hero_image.png";
 import contact_image from "../app/images/group1-image/contact_image.png";
-import HireMe from "./(handleRouter)/hireMe";
-import SendMessage from "./(handleRouter)/handleMessage";
-import Cv from "./(handleRouter)/Cv";
-import Button from "./components/atoms/Buttons/button1";
-import project1 from "../app/images/project_image/image1.jpeg";
-import project2 from "../app/images/project_image/image2.jpeg";
-import project3 from "../app/images/project_image/image3.jpeg";
+import yourhobby from "../app/images/group2-image/yourhobby.jpg";
+import yourstart from "../app/images/group2-image/yourstart.jpg";
+import lowkeystyle from "../app/images/group2-image/yourlowkey.jpg";
 
 export default function HomePage() {
   return (
-    <main className="flex flex-col justify-center items-center gap-[20rem] md:container mx-auto max-w-[1024px]">
+    <main className="flex flex-col justify-center items-center gap-[24rem] md:container mx-auto max-w-[1024px]">
       {/* Hero Section */}
       <section className="flex justify-between items-center gap-[10rem] w-full max-w-[1024px] mx-auto">
         <div className="flex flex-col">
@@ -23,7 +29,12 @@ export default function HomePage() {
           </div>
           <div className="flex gap-4">
             <HireMe />
-            <Cv />
+
+            <Link href="./Professional CV Resume.pdf" target="blank">
+              <Button color={"portfolio_two"}>
+                Download CV <FontAwesomeIcon icon={faDownload} />
+              </Button>
+            </Link>
           </div>
         </div>
         <div className="flex justify-end">
@@ -57,36 +68,10 @@ export default function HomePage() {
       </section>
 
       {/* Projects Section */}
-      <section className="w-full max-w-[1024px] mx-auto flex flex-col justify-between gap-10">
-        <h2 className="text-white text-[64px]">
-          My Recent <span className="text-[#00ADB5]">Projects</span>
-        </h2>
-        <div className="flex gap-4">
-          <Button color={"portfolio_one"}>All</Button>
-          <Button color={"secondary"}>Web Applications</Button>
-          <Button color={"secondary"}>Mobile Applications</Button>
-        </div>
-        <div className="flex gap-8">
-          <Image
-            src={project1}
-            alt="project image"
-            className="w-[200px] h-[300px] rounded-2xl"
-          />
-          <Image
-            src={project2}
-            alt="project image"
-            className="w-[200px] h-[300px] rounded-2xl"
-          />
-          <Image
-            src={project3}
-            alt="project image"
-            className="w-[200px] h-[300px] rounded-2xl"
-          />
-        </div>
-      </section>
+      <ProjectsFilter />
 
       {/* Message Section */}
-      <section className="w-full max-w-[1024px] mx-auto flex  justify-between gap-10">
+      <section className="w-full max-w-[1024px] mx-auto flex  justify-between gap-10 ">
         <div className="flex flex-col items-center flex-1">
           <div className=" text-5xl flex flex-col mb-9">
             <h2 className=" text-white mb-4">Got a project in</h2>

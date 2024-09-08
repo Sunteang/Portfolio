@@ -39,7 +39,7 @@ export default function SendMessage() {
               id="name"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-900 text-gray-300 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-300"
+              className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-900 text-gray-300 focus:ring-2 focus:ring-[#00ADB5] focus:border-[#00ADB5] transition duration-300"
               required
             />
           </div>
@@ -55,7 +55,7 @@ export default function SendMessage() {
               id="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-900 text-gray-300 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-300"
+              className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-900 text-gray-300 focus:ring-2 focus:ring-[#00ADB5] focus:border-[#00ADB5] transition duration-300"
               required
             />
           </div>
@@ -70,7 +70,7 @@ export default function SendMessage() {
               id="message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-900 text-gray-300 focus:ring-2 focus:ring-yellow-400 focus:border-yellow-400 transition duration-300"
+              className="w-full px-4 py-2 border border-gray-600 rounded-lg bg-gray-900 text-gray-300 focus:ring-2 focus:ring-[#00ADB5] focus:border-[#00ADB5] transition duration-300"
               required
             />
           </div>
