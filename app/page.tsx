@@ -13,9 +13,6 @@ import Image from "next/image";
 import about_image from "../app/images/group1-image/about_image.png";
 import hero_image from "../app/images/group1-image/hero_image.png";
 import contact_image from "../app/images/group1-image/contact_image.png";
-import yourhobby from "../app/images/group2-image/yourhobby.jpg";
-import yourstart from "../app/images/group2-image/yourstart.jpg";
-import lowkeystyle from "../app/images/group2-image/yourlowkey.jpg";
 
 export default function HomePage() {
   return (
