@@ -5,6 +5,15 @@ import { useParams } from "next/navigation";
 // Project details with updated image field
 const projectDetails = {
   "project-1": {
+    title: "Lomnov, RealEstate",
+    description:
+      "Lomnov is a trusted real estate provider specializing in buying, selling, renting, and investing in properties. Our team is committed to offering exceptional service, with a focus on transparency, trust, and integrity. We help clients navigate the real estate market with ease, offering tailored solutions for residential and commercial properties.",
+
+    imageUrl:
+      "https://i.pinimg.com/originals/9a/ab/7c/9aab7cb73f7cd3f7263994e255592c49.jpg",
+    projectLink: "https://d7sbnt81ln46j.cloudfront.net/en",
+  },
+  "project-2": {
     title: "YourHobby",
     description:
       "This project is dedicated to providing a seamless and reliable platform for buying and selling a wide range of electronic devices, including smartphones, laptops, desktops, headphones, and more. Our mission is to offer customers the latest and most trusted gadgets at competitive prices, all while ensuring a smooth shopping experience.",
@@ -13,7 +22,7 @@ const projectDetails = {
       "https://i.pinimg.com/originals/74/c0/3d/74c03d4b0d7a416d443f257edd2e0e57.jpg",
     projectLink: "https://your-hobby.vercel.app/",
   },
-  "project-2": {
+  "project-3": {
     title: "YourStart",
     description:
       "This project focuses on delivering comprehensive services to clients, specializing in market analysis and brand identity development.",
@@ -22,7 +31,7 @@ const projectDetails = {
       "https://i.pinimg.com/originals/5e/17/74/5e1774753ae2655db71d16095a9a52e8.jpg",
     projectLink: "https://your-start.vercel.app/",
   },
-  "project-3": {
+  "project-4": {
     title: "Lowkey Style",
     description:
       "This project is dedicated to offering a diverse collection of men's and women's clothing that combines style, comfort, and quality.",
@@ -31,7 +40,7 @@ const projectDetails = {
       "https://i.pinimg.com/originals/b5/aa/ee/b5aaee5596b2f859efa828f741dd4ff0.jpg",
     projectLink: "https://lowkey-fashion.vercel.app/",
   },
-  "project-4": {
+  "project-5": {
     title: "E-Learning",
     description:
       "The E-Learning app provides a rich library of videos for users to easily learn new skills and topics. It's an accessible platform that allows everyone to watch and learn at their own pace.",
@@ -39,6 +48,15 @@ const projectDetails = {
     imageUrl:
       "https://i.pinimg.com/originals/50/aa/d3/50aad3fd652c199512a7225578b792ec.jpg",
     projectLink: "https://e-learning.vercel.app/",
+  },
+  "project-6": {
+    title: "Lomnov Dashboard",
+    description:
+      "Lomnov Dashboard is your one-stop solution for buying, selling, renting, or investing in real estate. It offers property listings, tailored insights, and tools to manage transactions effortlessly, all with Lomnov’s trusted commitment to transparency and exceptional service.",
+
+    imageUrl:
+      "https://i.pinimg.com/originals/f9/49/0f/f9490f3a2dd597b193645b4dd9454e06.jpg",
+    projectLink: "https://dtngpr0392qj9.cloudfront.net/signIn",
   },
 };
 

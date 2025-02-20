@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Button from "../components/atoms/Buttons/button1";
+import Button from "../../components/atoms/Buttons/button1";
 
 //image
 import Image from "next/image";
@@ -9,32 +9,46 @@ import yourhobby from "../images/group2-image/yourhobby.jpg";
 import yourstart from "../images/group2-image/yourstart.jpg";
 import yourlowkey from "../images/group2-image/yourlowkey.jpg";
 import elearning from "../images/group2-image/elearning.png";
+import lomnov from "../images/group2-image/lomnov_web.jpg";
+import dashboard from "../images/group2-image/lomnov_dashboard.jpg";
 
 // Sample project data
 const projects = [
   {
     id: 1,
+    name: "Lomnov",
+    category: "Web Application",
+    image: lomnov,
+  },
+  {
+    id: 2,
     name: "Your Hobby",
     category: "Web Application",
     image: yourhobby,
   },
   {
-    id: 2,
+    id: 3,
     name: "YourStart",
     category: "Mobile Application",
     image: yourstart,
   },
   {
-    id: 3,
+    id: 4,
     name: "Lowkey Style",
     category: "Web Application",
     image: yourlowkey,
   },
   {
-    id: 4,
+    id: 5,
     name: "E-Learning",
     category: "Mobile Application",
     image: elearning,
+  },
+  {
+    id: 6,
+    name: "Lomnov Dashboard",
+    category: "Web Application",
+    image: dashboard,
   },
 ];
 

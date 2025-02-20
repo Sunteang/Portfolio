@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Button from "../components/atoms/Buttons/button1";
+import Button from "../../components/atoms/Buttons/button1";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 

@@ -35,6 +35,14 @@ export default function NavBar() {
           <li>
             <Link
               className="hover:text-[#00ADB5] transition duration-300"
+              href="/blog"
+            >
+              Blog
+            </Link>
+          </li>
+          <li>
+            <Link
+              className="hover:text-[#00ADB5] transition duration-300"
               href="/contact"
             >
               Contact

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import HireMe from "./(handleRouter)/hireMe";
 import SendMessage from "./(handleRouter)/handleMessage";
-import Button from "./components/atoms/Buttons/button1";
+import Button from "../components/atoms/Buttons/button1";
 import ProjectsFilter from "./(handleRouter)/projectFilter";
 
 //contain all icons import
@@ -27,7 +27,7 @@ export default function HomePage() {
           <div className="flex gap-4">
             <HireMe />
 
-            <Link href="./Professional CV Resume.pdf" target="blank">
+            <Link href="./Resume.pdf" target="blank">
               <Button color={"portfolio_two"}>
                 Download CV <FontAwesomeIcon icon={faDownload} />
               </Button>

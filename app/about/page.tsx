@@ -1,20 +1,20 @@
 import Image from "next/image";
-import Profile from "../images/Profile.jpeg";
+import Profile from "../images/my_profile.jpeg";
 
 export default function AboutPage() {
   return (
-    <div className="bg-gray-900 rounded-lg shadow-lg p-8 mx-auto max-w-[1024px]">
+    <div className="p-8 mx-auto max-w-[1024px]">
       {/* Profile and Introduction */}
       <div className="flex items-center space-x-8 mb-8">
         <Image
           src={Profile}
           alt="Profile"
-          width={128}
-          height={128}
-          className="w-32 h-32 rounded-full shadow-md"
+          width={130}
+          height={130}
+          className="w-34 h-34 rounded-full shadow-md"
         />
         <div>
-          <h2 className="text-4xl font-bold mb-4 text-[#00ADB5]">About Me</h2>
+          <h2 className="text-4xl font-bold mb-4 text-white">About <span className="text-[#00ADB5]">Me</span></h2>
           <p className="mb-4 text-gray-300">
             I am a passionate Computer Science student and a full-stack web
             developer with hands-on experience in building dynamic and

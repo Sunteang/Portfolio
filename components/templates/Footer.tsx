@@ -80,7 +80,8 @@ export default function Footer() {
 
       <div className="flex flex-col items-center border-t-2 border-t-gray-700">
         <p className="text-sm my-4 ">
-          &copy; {new Date().getFullYear()} My Portfolio. All rights reserved.
+          {/* &copy; {new Date().getFullYear()} My Portfolio. All rights reserved. */}
+          &copy; 2024 My Portfolio. All rights reserved.
         </p>
       </div>
     </footer>
