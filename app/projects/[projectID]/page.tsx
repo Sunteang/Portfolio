@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useParams } from "next/navigation";
 
 // Project details with updated image field
@@ -92,11 +93,14 @@ export default function ProjectDetailPage() {
 
       {/* Render the project image */}
       {project.imageUrl && (
-        <img
-          src={project.imageUrl}
-          alt={project.title}
-          className="w-full h-auto mb-6 rounded-lg shadow-md"
-        />
+        <Image
+        src={project.imageUrl}
+        alt={project.title}
+        width={800} 
+        height={600}
+        className="w-full h-auto mb-6 rounded-lg shadow-md"
+        unoptimized 
+      />
       )}
     </div>
   );

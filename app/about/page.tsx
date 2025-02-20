@@ -18,7 +18,7 @@ export default function AboutPage() {
           <p className="mb-4 text-gray-300">
             I am a passionate Computer Science student and a full-stack web
             developer with hands-on experience in building dynamic and
-            innovative applications. Currently, I am pursuing my bachelor's
+            innovative applications. Currently, I am pursuing my bachelor&apos;s
             degree at the University of Cambodia and enhancing my skills through
             SabaiCode Bootcamp.
           </p>
@@ -36,7 +36,7 @@ export default function AboutPage() {
         <h3 className="text-2xl font-semibold text-[#00ADB5] mb-4">Education</h3>
         <ul className="text-gray-300">
           <li>
-            <strong>University of Cambodia</strong> - Bachelor's in Computer
+            <strong>University of Cambodia</strong> - Bachelor&apos;s in Computer
             Science
           </li>
           <li>
