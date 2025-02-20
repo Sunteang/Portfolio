@@ -28,7 +28,7 @@ export default function ProjectsPage() {
     },
     {
       id: "project-5",
-      title: "E-Learning",
+      title: "E-Learning App",
       description:
         "The E-Learning app offers a wide variety of educational videos, making learning accessible to everyone. Users can explore topics and enhance their skills by watching engaging content at their convenience.",
     },
@@ -37,6 +37,11 @@ export default function ProjectsPage() {
       title: "Lomnov Dashboard",
       description:
         "Lomnov Dashboard is your one-stop solution for buying, selling, renting, or investing in real estate. It offers property listings, tailored insights, and tools to manage transactions effortlessly, all with Lomnov`s trusted commitment to transparency and exceptional service.",
+    },
+     {id: "project-7",
+      title: "Wedding Service App",
+      description:
+        "The Wedding Service App was created to simplify the process of finding services (e.g., wedding bands, photography, bridal makeup, wedding venues, wedding dresses, florists, decorations, and all other wedding-related services) that were previously difficult to locate. it makes it easier for service providers to connect with potential customers.",
     },
   ];
 

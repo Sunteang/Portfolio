@@ -11,6 +11,7 @@ import yourlowkey from "../images/group2-image/yourlowkey.jpg";
 import elearning from "../images/group2-image/elearning.png";
 import lomnov from "../images/group2-image/lomnov_web.jpg";
 import dashboard from "../images/group2-image/lomnov_dashboard.jpg";
+import wedding from "../images/group2-image/wedding_service.jpg"
 
 // Sample project data
 const projects = [
@@ -40,7 +41,7 @@ const projects = [
   },
   {
     id: 5,
-    name: "E-Learning",
+    name: "E-Learning App",
     category: "Mobile Application",
     image: elearning,
   },
@@ -49,6 +50,12 @@ const projects = [
     name: "Lomnov Dashboard",
     category: "Web Application",
     image: dashboard,
+  },
+  {
+    id: 7,
+    name: "Wedding Service App",
+    category: "Mobile Application",
+    image: wedding,
   },
 ];
 

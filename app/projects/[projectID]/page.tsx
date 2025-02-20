@@ -42,7 +42,7 @@ const projectDetails = {
     projectLink: "https://lowkey-fashion.vercel.app/",
   },
   "project-5": {
-    title: "E-Learning",
+    title: "E-Learning App",
     description:
       "The E-Learning app provides a rich library of videos for users to easily learn new skills and topics. It's an accessible platform that allows everyone to watch and learn at their own pace.",
 
@@ -58,6 +58,15 @@ const projectDetails = {
     imageUrl:
       "https://i.pinimg.com/originals/f9/49/0f/f9490f3a2dd597b193645b4dd9454e06.jpg",
     projectLink: "https://dtngpr0392qj9.cloudfront.net/signIn",
+  },
+  "project-7": {
+    title: "Wedding Service App",
+    description:
+      "The Wedding Service App was created to simplify the process of finding services (e.g., wedding bands, photography, bridal makeup, wedding venues, wedding dresses, florists, decorations, and all other wedding-related services) that were previously difficult to locate. The app provides comprehensive information about a wide range of wedding-related services currently available in Cambodia. It ensures speed, reliability, and quality to help couples manage their wedding planning effectively. Additionally, it makes it easier for service providers to connect with potential customers.",
+
+    imageUrl:
+      "https://i.pinimg.com/736x/01/96/e1/0196e1a0581aa0b7bdd10796bb7353d7.jpg",
+    projectLink: "https://github.com/Sunteang/Wedding_Service-Flutter_app.git",
   },
 };
 
