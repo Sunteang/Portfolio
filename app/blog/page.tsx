@@ -51,7 +51,7 @@ export default function BlogPage() {
       date: "10,11 February 2025",
       location: "Wing Bank Bokor Branch",
       description:
-        "Completed a short training on **New Employee Orientation**, covering company policies, workplace culture, and professional expectations. Learned about internal processes, teamwork dynamics, and key responsibilities to ensure a smooth transition into the role.",
+        "Completed a short training on **New Employee Orientation*, covering company policies, workplace culture, and professional expectations. Learned about internal processes, teamwork dynamics, and key responsibilities to ensure a smooth transition into the role.",
       image: training_wing,
     },
   ];
