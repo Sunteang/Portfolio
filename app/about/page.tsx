@@ -48,14 +48,19 @@ export default function AboutPage() {
       {/* Experience */}
       <section className="mb-8">
         <h3 className="text-2xl font-semibold text-[#00ADB5] mb-4">Experience</h3>
-        <ul className="text-gray-300">
+        <ul className="text-gray-300 space-y-2">
           <li>
-            <strong>Web Developer</strong> - Built dynamic web applications using
-            React, Next.js, and TypeScript. While also working on the back-end using Node.js, Express, and MongoDB.
+            <strong>Frontend Apprentice – WingBank</strong> (6 months) – 
+            Worked in a collaborative development team to build and maintain internal banking web applications. 
+            Focused on creating responsive, accessible, and user-friendly UIs using React JS, Next JS, TypeScript, and Tailwind CSS. 
+            Gained hands-on experience in real-world frontend development and design system implementation.
           </li>
           <li>
-            <strong>DevOps Engineer</strong> - Deployed CI/CD pipelines with
-            Docker and AWS.
+            <strong>Full-Stack Web Developer – SabaiCode Bootcamp</strong> – 
+            Completed intensive full-stack training covering front-end and back-end development. 
+            Built dynamic applications using React, Next.js, TypeScript, and Tailwind CSS on the front-end, 
+            and Node.js, Express, and MongoDB on the back-end. Also deployed CI/CD pipelines using Docker and AWS 
+            and practiced version control with Git and GitHub.
           </li>
         </ul>
       </section>
